@@ -1,0 +1,14 @@
+{
+  "project": "FF Ban Simulator",
+  "mode": "simulation",
+  "developer": {
+    "instagram": "@d09_l7",
+    "tiktok": "@d09_l7"
+  },
+  "features": [
+    "Ban Player ID",
+    "Spam Player (.)",
+    "Accept Player (.)",
+    "Add 200 Visits (.)"
+  ]
+}

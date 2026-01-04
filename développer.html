@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Developer Panel</title>
+<link rel="stylesheet" href="style.css">
+
+<script>
+(function(){
+  const pass = prompt("🔐 أدخل كلمة سر المطور:");
+  if (pass !== "2026") {
+    alert("❌ كلمة السر غير صحيحة");
+    window.location.href = "index.html";
+  }
+})();
+</script>
+
+</head>
+<body>
+
+<div class="container">
+  <h1>👨‍💻 Developer Panel</h1>
+
+  <div class="notice">
+    🔒 صفحة خاصة بالمطور (Simulation)
+  </div>
+
+  <h3>المميزات</h3>
+
+  <input type="text" id="spamId" placeholder="ID اللاعب (Spam)">
+  <button onclick="spamPlayer()">تشغيل Spam</button>
+
+  <input type="text" id="visitId" placeholder="ID اللاعب (Visit)">
+  <button onclick="visitPlayer()">زيادة زيارات</button>
+
+  <input type="text" id="acceptId" placeholder="ID اللاعب">
+  <button onclick="acceptPlayer()">قبول اللاعب</button>
+
+  <pre id="devOutput">Waiting...</pre>
+
+  <a class="dev-link" href="index.html">⬅ الرجوع</a>
+
+  <div class="footer">
+    Developer ©  
+    <a href="https://instagram.com/d09_l7" target="_blank">@d09_l7</a> |
+    <a href="https://tiktok.com/@d09_l7" target="_blank">@d09_l7</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
